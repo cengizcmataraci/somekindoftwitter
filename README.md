@@ -1,24 +1,51 @@
-# README
+# Some Kind of Twitter
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A Twitter clone project based on Web-Chrunch's tutorial, some function & design changed by me. For the orijinal video series: [Web-Crunch YouTube Channel](https://www.youtube.com/channel/UCzePijHDYnVHIXW6HYTL4dg)
 
-Things you may want to cover:
+## Installation
 
-* Ruby version
+Check your Ruby version first
+```bash
+ruby -v
+```
 
-* System dependencies
+Install Guard gem
+```bash
+gem install guard -v 2.14.0
+```
 
-* Configuration
+Install Devise gem
+```bash
+gem install devise
+```
 
-* Database creation
+Install Simple_Form gem
+```bash
+gem install simple_form
+```
 
-* Database initialization
+## Usage
 
-* How to run the test suite
+Clone the project
+```
+git clone https://github.com/cengizcmataraci/somekindoftwitter.git
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+Open the project and start the server
+```
+cd somekindoftwitter
+rails server
+```
 
-* Deployment instructions
+For the LiveLoad open Guard
+```
+bundle exec guard
+```
 
-* ...
+## Contributing
+Pull requests are welcome. It's only a demo project, so feel free to contribute.
+
+Please make sure to update tests as appropriate.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
