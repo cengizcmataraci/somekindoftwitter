@@ -39,12 +39,12 @@
     <div class="navbar-end">
       <div class="navbar-item">
         <div class="field is-grouped">
+          <% if current_user %>
           <p class="control">
             <%= link_to 'New Tweet', new_tweet_path, class: "button is-info is-inverted" %>
           </p>
-          <% if current_user %>
             <p class="control m-2">
-              Welcome <%= current_user.email %>
+              Welcome <%= current_user.name %>
             </p>
             <%= link_to 'Edit Profile', edit_user_registration_path, class: "control m-2 has-text-light" %>
             <%= link_to 'Logout', destroy_user_session_url, method: :delete, class: "control m-2 has-text-light" %>
