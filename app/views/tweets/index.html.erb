@@ -1,10 +1,14 @@
 <section class="section">
-<div class="container">
-<div class="columns">
-  <%= render 'trends' %>
-  <%= render 'feed' %>
-  <%= render 'whofollow' %>
-</div>
-</div>
+  <div class="container">
+    <div class="columns">
+      <% if current_user %>
+        <%= render 'profile' %>
+      <% else %>
+        <%= render 'trends' %>
+      <% end %>
+      <%= render 'feed' %>
+      <%= render 'whofollow' %>
+    </div>
+  </div>
 </section>
 

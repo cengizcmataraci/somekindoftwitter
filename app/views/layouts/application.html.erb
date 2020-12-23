@@ -40,9 +40,9 @@
       <div class="navbar-item">
         <div class="field is-grouped">
           <% if current_user %>
-          <p class="control">
-            <%= link_to 'New Tweet', new_tweet_path, class: "button is-info is-inverted" %>
-          </p>
+            <p class="control">
+              <%= link_to 'New Tweet', root_path, class: "button is-info is-inverted" %>
+            </p>
             <p class="control m-2">
               Welcome <%= current_user.name %>
             </p>
